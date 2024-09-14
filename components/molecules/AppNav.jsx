@@ -1,9 +1,9 @@
-import Image from 'next/image';
-import Link from 'next/link';
-import { useRouter } from 'next/router';
-import { useEffect, useState } from 'react';
-import USER from '../../data/user.json';
-import AppToggle from '../atomics/AppToggle';
+import Image from "next/image";
+import Link from "next/link";
+import { useRouter } from "next/router";
+import { useEffect, useState } from "react";
+import USER from "../../data/user.json";
+import AppToggle from "../atomics/AppToggle";
 
 const AppNav = () => {
   const [isActiveNav, setIsActiveNav] = useState(false);
@@ -13,8 +13,8 @@ const AppNav = () => {
   const activeLink = (url) => {
     const className =
       url === pathname
-        ? 'font-bold text-white hover:text-white lg:hover:text-primary lg:text-primary bg-primary '
-        : 'bg-light-gray bg-opacity-30 hover:text-primary';
+        ? "font-bold text-white hover:text-white lg:hover:text-primary lg:text-primary bg-primary "
+        : "bg-light-gray bg-opacity-30 hover:text-primary";
     return className;
   };
 
@@ -35,31 +35,26 @@ const AppNav = () => {
   };
 
   useEffect(() => {
-    window.addEventListener('scroll', handleWindowScroll);
+    window.addEventListener("scroll", handleWindowScroll);
 
     return () => {
-      window.removeEventListener('scroll', handleWindowScroll);
+      window.removeEventListener("scroll", handleWindowScroll);
     };
   }, []);
 
   return (
     <nav
       className={`flex items-center justify-between fixed top-0 z-40 w-full max-w-[1905px] transform right-1/2 translate-x-1/2 md:px-10 2xl:px-20 md:py-3 transition duration-500 ${
-        isActiveNav && 'bg-white'
+        isActiveNav && "bg-white"
       }`}
     >
       <div
         className={`flex items-center justify-between w-full z-50 transition duration-500 ${
-          isActiveToggler && 'bg-white'
-        } ${isActiveNav && 'bg-white'} px-3 md:px-0 py-3 md:py-0`}
+          isActiveToggler && "bg-white"
+        } ${isActiveNav && "bg-white"} px-3 md:px-0 py-3 md:py-0`}
       >
         <Link href="/" className="flex items-center">
-          <Image
-            src="/favicon.ico"
-            alt="Syed Moinuddin"
-            width={40}
-            height={40}
-          />
+          <Image src="/favicon.ico" alt="Rohit Kumar" width={40} height={40} />
         </Link>
 
         <AppToggle onClick={handleToggler} active={isActiveToggler} />
@@ -70,8 +65,8 @@ const AppNav = () => {
          bg-white lg:bg-transparent left-3 right-3 border lg:border-none border-light-gray p-8 lg:p-0 space-y-4 lg:space-y-0 flex-col lg:flex-row space-x-0 lg:space-x-14 rounded-xl z-10
         ${
           isActiveToggler
-            ? 'translate-y-[250px]'
-            : 'translate-y-[-100vh] lg:translate-y-0'
+            ? "translate-y-[250px]"
+            : "translate-y-[-100vh] lg:translate-y-0"
         }`}
       >
         {USER.navigations.map((item) => (
@@ -92,7 +87,7 @@ const AppNav = () => {
         onClick={handleToggler}
         aria-hidden="true"
         className={`fixed h-screen top-16 bottom-0 left-0 right-0 transition duration-500 invisible bg-black bg-opacity-80 ${
-          isActiveToggler && 'visible'
+          isActiveToggler && "visible"
         }`}
       />
     </nav>

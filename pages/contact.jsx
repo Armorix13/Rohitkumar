@@ -1,11 +1,11 @@
-import AppSection from '../components/molecules/AppSection';
-import AppHeader from '../components/organisms/AppHeader';
-import AppShell from '../components/templates/AppShell';
-import USER from '../data/user.json';
+import AppSection from "../components/molecules/AppSection";
+import AppHeader from "../components/organisms/AppHeader";
+import AppShell from "../components/templates/AppShell";
+import USER from "../data/user.json";
 
 const Contact = () => (
   <AppShell
-    title={`Syed Moinuddin | ${USER.contact.title}`}
+    title={`Rohit Kumar | ${USER.contact.title}`}
     description={USER.contact.description}
     keyword="contact me, contact, social media"
     cta={false}

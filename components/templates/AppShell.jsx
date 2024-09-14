@@ -1,13 +1,13 @@
-import PropTypes from 'prop-types';
-import AppContainer from '../atomics/AppContainer';
-import AppDecoration from '../atomics/AppDecoration';
-import AppHead from '../atomics/AppHead';
-import AppNav from '../molecules/AppNav';
-import AppSide from '../atomics/AppSide';
-import AppSignature from '../organisms/AppSignature';
-import AppCtaSection from '../molecules/AppCtaSection';
-import AppHero from '../molecules/AppHero';
-import AppFooter from '../atomics/AppFooter';
+import PropTypes from "prop-types";
+import AppContainer from "../atomics/AppContainer";
+import AppDecoration from "../atomics/AppDecoration";
+import AppHead from "../atomics/AppHead";
+import AppNav from "../molecules/AppNav";
+import AppSide from "../atomics/AppSide";
+import AppSignature from "../organisms/AppSignature";
+import AppCtaSection from "../molecules/AppCtaSection";
+import AppHero from "../molecules/AppHero";
+import AppFooter from "../atomics/AppFooter";
 
 const AppShell = ({ title, keyword, description, hero, cta, children }) => (
   <>
@@ -34,10 +34,10 @@ AppShell.propTypes = {
 };
 
 AppShell.defaultProps = {
-  title: 'Syed Moinuddin',
+  title: "Rohit Kumar",
   description:
-    'I am a freelancer from India, who focuses on web development, especially frontend web development.',
-  keyword: '',
+    "I am a backend developer from India, who focuses on full stack development, especially backend development.",
+  keyword: "",
   hero: false,
   cta: true,
 };

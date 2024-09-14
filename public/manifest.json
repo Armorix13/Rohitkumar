@@ -4,9 +4,9 @@
   "display": "standalone",
   "scope": "/",
   "start_url": "/",
-  "name": "Syed Moinuddin",
-  "short_name": "Syed Moinuddin",
-  "description": "Syed Moinuddin Personal Portfolio Website",
+  "name": "Rohit Kumar",
+  "short_name": "Rohit Kumar",
+  "description": "Rohit Kumar Personal Portfolio Website",
   "icons": [
     {
       "src": "/Syed Logo.png",

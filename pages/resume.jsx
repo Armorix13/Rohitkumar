@@ -1,12 +1,12 @@
-import AppTimeline from '../components/atomics/AppTimeline';
-import AppSection from '../components/molecules/AppSection';
-import AppHeader from '../components/organisms/AppHeader';
-import AppShell from '../components/templates/AppShell';
-import USER from '../data/user.json';
+import AppTimeline from "../components/atomics/AppTimeline";
+import AppSection from "../components/molecules/AppSection";
+import AppHeader from "../components/organisms/AppHeader";
+import AppShell from "../components/templates/AppShell";
+import USER from "../data/user.json";
 
 const Resume = () => (
   <AppShell
-    title={`Syed Moinuddin | ${USER.resume.title}`}
+    title={`Rohit Kumar | ${USER.resume.title}`}
     description={USER.resume.description}
     keyword="resume, education, course, skill"
   >
@@ -36,7 +36,7 @@ const Resume = () => (
                 ))}
               </ul>
             ) : (
-              ''
+              ""
             )}
           </AppTimeline>
         ))}

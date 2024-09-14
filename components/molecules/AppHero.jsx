@@ -1,6 +1,6 @@
-import DATA from '../../data/user.json';
-import AppContainer from '../atomics/AppContainer';
-import AppButton from '../atomics/AppButton';
+import DATA from "../../data/user.json";
+import AppContainer from "../atomics/AppContainer";
+import AppButton from "../atomics/AppButton";
 
 const AppHero = () => (
   <header className="bg-hero-pattern bg-no-repeat bg-center px-3">
@@ -19,7 +19,13 @@ const AppHero = () => (
         <p className="text-xs lg:text-base text-gray max-w-md tracking-widest mt-2 lg:mt-3 md:ml-1">
           {DATA.description}
         </p>
-        <AppButton title="GET IN TOUCH" href="/contact" />
+        <div className="flex gap-4 max-lg:flex-col">
+          <AppButton
+            title="RESUME"
+            href="https://drive.google.com/file/d/17e59DHKsgosOU09jwHE6CVV8nvqaVGRi/view?usp=drivesdk"
+          />
+          <AppButton title="GET IN TOUCH" href="/contact" />
+        </div>
       </div>
     </AppContainer>
   </header>
